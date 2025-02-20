@@ -47,7 +47,7 @@ client.on("messageCreate", async (message) => {
 
     if (command === "-stop") {
         const queue = player.nodes.get(message.guild.id);
-        if (!queue) return message.reply("❌ Não há música tocando!");
+        if (!queue) return message.reply("❌ Não há música a tocar!");
         queue.delete();
         message.reply("⏹ Música parada!");
     }
@@ -66,4 +66,4 @@ client.on("messageCreate", async (message) => {
     }
 });
 
-client.login("SEU_TOKEN_AQUI");
+client.login("ODkyMTExMzkyNzM4NTQxNjA4.GIaX59.NIysZaI3WqQGZnEeHnY0_FGQlUwMrLZL69wyIs");
